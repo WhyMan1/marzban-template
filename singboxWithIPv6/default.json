@@ -26,6 +26,17 @@
         "server": "dns-local"
       },
       {
+        "rule_set": "geosite-category-ir",
+        "server": "dns-local"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ads-all",
+          "geosite-category-ads-ir"
+        ],
+        "server": "dns-block"
+      },
+      {
         "outbound": "any",
         "server": "dns-local"
       }
@@ -91,12 +102,53 @@
         "outbound": "dns-out"
       },
       {
-        "domain_suffix": ".ir",
-        "outbound": "direct"
+        "rule_set": [
+          "geosite-category-ads-all",
+          "geosite-category-ads-ir"
+        ],
+        "outbound": "block"
       },
       {
         "ip_is_private": true,
         "outbound": "direct"
+      },
+      {
+        "domain_suffix": ".ir",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-category-ir",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geoip-ir",
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geosite-category-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-ir.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs"
       }
     ],
     "final": "proxy",
