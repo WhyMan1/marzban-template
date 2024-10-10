@@ -130,25 +130,33 @@
         "type": "remote",
         "tag": "geosite-category-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
+        "download_detour": "direct",
+        "update_interval": "168h0m0s"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
+        "download_detour": "direct",
+        "update_interval": "168h0m0s"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-ir.srs"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-ir.srs",
+        "download_detour": "direct",
+        "update_interval": "168h0m0s"
       },
       {
         "type": "remote",
         "tag": "geoip-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs",
+        "download_detour": "direct",
+        "update_interval": "168h0m0s"
       }
     ],
     "final": "proxy",
