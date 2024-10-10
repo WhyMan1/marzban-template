@@ -54,8 +54,7 @@
       "auto_route": true,
       "strict_route": true,
       "stack": "mixed",
-      "sniff": true,
-      "sniff_override_destination": true
+      "sniff": true
     }
   ],
   "outbounds": [
