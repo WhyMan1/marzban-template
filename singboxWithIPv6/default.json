@@ -164,7 +164,8 @@
   },
   "experimental": {
     "cache_file": {
-      "enabled": true
+      "enabled": true,
+      "store_rdrc": true
     }
   }
 }
