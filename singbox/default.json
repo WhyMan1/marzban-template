@@ -14,28 +14,9 @@
         "tag": "dns-local",
         "address": "local",
         "detour": "direct"
-      },
-      {
-        "tag": "dns-block",
-        "address": "rcode://success"
       }
     ],
     "rules": [
-      {
-        "domain_suffix": ".ir",
-        "server": "dns-local"
-      },
-      {
-        "rule_set": "geosite-category-ir",
-        "server": "dns-local"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ads-all",
-          "geosite-category-ads-ir"
-        ],
-        "server": "dns-block"
-      },
       {
         "outbound": "any",
         "server": "dns-local"
