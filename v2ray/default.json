@@ -18,6 +18,24 @@
       "settings": {
         "udp": true
       },
+      "tag": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "tag": "http",
       "sniffing": {
         "enabled": true,
         "destOverride": [
