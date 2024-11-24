@@ -29,12 +29,18 @@
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "singbox-tun",
-      "mtu": 9000,
-      "inet4_address": "172.19.0.1/30",
-      "inet6_address": "fdfe:dcba:9876::1/126",
+      "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ],
+      "route_exclude_address_set": [
+        "geoip-ir"
+      ],
       "auto_route": true,
-      "strict_route": true,
-      "stack": "mixed",
       "sniff": true
     }
   ],
