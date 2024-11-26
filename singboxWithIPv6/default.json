@@ -1,7 +1,6 @@
 {
   "log": {
-    "level": "warn",
-    "timestamp": true
+    "level": "warn"
   },
   "dns": {
     "servers": [
@@ -51,10 +50,7 @@
     {
       "type": "urltest",
       "tag": "⚡️ Auto",
-      "outbounds": null,
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "3m0s",
-      "tolerance": 50
+      "outbounds": null
     },
     {
       "type": "direct",
