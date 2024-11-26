@@ -36,9 +36,6 @@
       "route_exclude_address": [
         "192.168.0.0/16"
       ],
-      "route_exclude_address_set": [
-        "geoip-ir"
-      ],
       "auto_route": true,
       "sniff": true,
       "domain_strategy": "ipv4_only"
@@ -88,6 +85,10 @@
       },
       {
         "rule_set": "geosite-category-ir",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geoip-ir",
         "outbound": "direct"
       }
     ],
