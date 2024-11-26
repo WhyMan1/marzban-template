@@ -79,10 +79,7 @@
         "outbound": "dns-out"
       },
       {
-        "rule_set": [
-          "geosite-category-ads-all",
-          "geosite-category-ads-ir"
-        ],
+        "rule_set": "geosite-category-ads-all",
         "outbound": "block"
       },
       {
@@ -90,15 +87,7 @@
         "outbound": "direct"
       },
       {
-        "domain_suffix": ".ir",
-        "outbound": "direct"
-      },
-      {
         "rule_set": "geosite-category-ir",
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "geoip-ir",
         "outbound": "direct"
       }
     ],
@@ -116,14 +105,6 @@
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-ads-ir",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-ir.srs",
         "download_detour": "direct",
         "update_interval": "168h0m0s"
       },
