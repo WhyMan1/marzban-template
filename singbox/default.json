@@ -30,13 +30,9 @@
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "singbox-tun",
-      "address": [
-        "172.19.0.1/30"
-      ],
-      "route_exclude_address": [
-        "192.168.0.0/16"
-      ],
+      "address": "172.19.0.1/30",
       "auto_route": true,
+      "route_exclude_address": "192.168.0.0/16",
       "sniff": true,
       "domain_strategy": "ipv4_only"
     }

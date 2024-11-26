@@ -33,11 +33,11 @@
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
+      "auto_route": true,
       "route_exclude_address": [
         "192.168.0.0/16",
         "fc00::/7"
       ],
-      "auto_route": true,
       "sniff": true
     }
   ],
