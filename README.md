@@ -12,7 +12,6 @@
 لیستی از تمپلیت های شخصی سازی شده برای مرزبان
 
 # لیست تمپلیت ها
-- [تمپلیت برای v2ray](https://github.com/WhyMan1/marzban-template/tree/master/v2ray)
 - [تمپلیت برای sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
 - [تمپلیت برای sing-box with IPv6](https://github.com/WhyMan1/marzban-template/tree/master/singboxWithIPv6)
 - [صفحه سابسکریپشن](https://github.com/WhyMan1/marzban-template/tree/master/subscription)
@@ -27,7 +26,6 @@
 1. دانلود فایل های تمپلیت
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
-sudo wget -N -P /var/lib/marzban/templates/v2ray/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/v2ray/default.json
 sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
 sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/home/index.html
 ```
@@ -36,16 +34,12 @@ sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.c
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
 echo 'SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"' | sudo tee -a /opt/marzban/.env
-echo 'USE_CUSTOM_JSON_DEFAULT=True' | sudo tee -a /opt/marzban/.env
-echo 'V2RAY_SUBSCRIPTION_TEMPLATE="v2ray/default.json"' | sudo tee -a /opt/marzban/.env
 ```
 یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"
-USE_CUSTOM_JSON_DEFAULT=True
-V2RAY_SUBSCRIPTION_TEMPLATE="v2ray/default.json"
 ```
 
 3. ری استارت مرزبان
