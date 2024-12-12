@@ -6,10 +6,22 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>تمپلیت های مختلف برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
+<h1 align="center"/>تمپلیت‌های sing-box برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
+
+
+<p align="center">
+ <a href="./README.md">
+ English
+ </a>
+ /
+ <a href="./README-fa.md">
+ فارسی
+ </a>
+</p>
+
 
 # مقدمه
-لیستی از تمپلیت های شخصی سازی شده برای مرزبان
+لیستی از تمپلیت‌های شخصی سازی شده برای مرزبان
 
 # لیست تمپلیت ها
 - [تمپلیت برای sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
@@ -22,7 +34,7 @@
 برای نصب هر تمپلیت به صفحه مربوط به آن مراجعه کنید
 
 # نصب همه
-برای نصب همه تمپلیت های موجو دستورات زیر را در ترمینال سرور خود اجرا کنید:
+برای نصب همه تمپلیت های موجود دستورات زیر را در ترمینال سرور خود اجرا کنید:
 1. دانلود فایل های تمپلیت
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
@@ -49,6 +61,20 @@ marzban restart
 
 ## بروزرسانی
 برای بروزرسانی تمپلیت ها فقط کافیست مرحله 1 را تکرار کنید.
+
+# Contributors
+
+<p align="center">
+Thanks to the all contributors who have helped improve Sing-box template:
+</p>
+<p align="center">
+<a href="https://github.com/WhyMan1/marzban-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=WhyMan1/marzban-template" />
+</a>
+</p>
+<p align="center">
+  Made with <a rel="noopener noreferrer" target="_blank" href="https://contrib.rocks">contrib.rocks</a>
+</p>
 
 # حمایت از من
 
