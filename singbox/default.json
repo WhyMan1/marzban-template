@@ -22,18 +22,24 @@
       }
     ],
     "final": "dns-remote",
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "singbox-tun",
-      "address": "172.19.0.1/30",
+      "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
       "auto_route": true,
-      "route_exclude_address": "192.168.0.0/16",
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ],
       "sniff": true,
-      "domain_strategy": "ipv4_only"
+      "domain_strategy": "prefer_ipv4"
     }
   ],
   "outbounds": [
@@ -68,7 +74,7 @@
         "outbound": "dns-out"
       },
       {
-        "rule_set": "geosite-category-ads-all",
+        "rule_set": "geosite-category-ads",
         "outbound": "block"
       },
       {
@@ -87,17 +93,17 @@
     "rule_set": [
       {
         "type": "remote",
-        "tag": "geosite-category-ir",
+        "tag": "geosite-category-ads",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs",
         "download_detour": "direct",
         "update_interval": "168h0m0s"
       },
       {
         "type": "remote",
-        "tag": "geosite-category-ads-all",
+        "tag": "geosite-category-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
         "download_detour": "direct",
         "update_interval": "168h0m0s"
       },
