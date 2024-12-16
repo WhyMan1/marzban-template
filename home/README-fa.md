@@ -6,7 +6,7 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>Home Page Template for the <a href="https://github.com/Gozargah/Marzban">Marzban</a> Panel</h1>
+<h1 align="center"/>قالب صفحه خانه برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
 
 <p align="center">
  <a href="./README.md">
@@ -18,38 +18,37 @@
  </a>
 </p>
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Installation Steps](#installation-steps)
+## فهرست مطالب
+- [مقدمه](#مقدمه)
+- [مراحل نصب](#مراحل-نصب)
 
-# Introduction
-A simple HTML template for the Marzban home page.
+# مقدمه
+یک قالب html ساده برای صفحه خانه مرزبان
 
-# Installation Steps
-1. Download the template file.
-
+# مراحل نصب
+1. دانلود فایل template
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/oXIIIo/marzban-template/master/home/index.html
 ```
 
-2. Run the following commands in your server terminal:
+2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'HOME_PAGE_TEMPLATE="home/index.html"' | sudo tee -a /opt/marzban/.env
 ```
-Alternatively, add the following values to the .env file located in the /opt/marzban directory:
+یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 HOME_PAGE_TEMPLATE="home/index.html"
 ```
 
-3. Restart Marzban:
+3. ری استارت مرزبان
 ```sh
 marzban restart
 ```
 
-## Updating
-To update the templates, simply repeat step 1.
+## بروزرسانی
+برای بروزرسانی تمپلیت فقط کافیست مرحله 1 را تکرار کنید.
 
 # Contributors
 
@@ -65,8 +64,8 @@ Thanks to the all contributors who have helped improve Sing-box template:
   Made with <a rel="noopener noreferrer" target="_blank" href="https://contrib.rocks">contrib.rocks</a>
 </p>
 
-# Support
+# حمایت از من
 
-<a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
+<a href="https://nowpayments.io/donation?api_key=MG750CX-D7AMMH9-QWARQ7V-9ZKH9XQ&source=lk_donation&medium=referral" target="_blank">
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
 </a>

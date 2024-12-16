@@ -6,7 +6,7 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>Subscription Template for the <a href="https://github.com/Gozargah/Marzban">Marzban</a> Panel</h1>
+<h1 align="center"/>قالب سابسکریپشن برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
 
 <p align="center">
  <a href="./README.md">
@@ -18,41 +18,41 @@
  </a>
 </p>
 
-## Table of Contents
-- [Features](#features)
-- [Installation Steps](#installation-steps)
+## فهرست مطالب
+- [ویژگی‌ ها](#ویژگی-ها)
+- [مراحل نصب](#مراحل-نصب)
 
-# Introduction
-A simple HTML template for better presentation of user information.
+# مقدمه
+یک قالب html ساده برای نمایش بهتر اطلاعات کاربر
 
-# Features
-- Quickly add subscription links to the Sing-box app.
-- Download link for the required application.
+# ویژگی ها
+- افزودن سریع لینک سابسکریپشن به برنامه sing-box
+- لینک دانلود اپلیکیشن مورد نیاز
 
-# Installation Steps
-1. Download the template file.
+# مراحل نصب
+1. دانلود فایل template
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
 ```
 
-2. Run the following commands in your server terminal:
+2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
 ```
-Alternatively, add the following values to the .env file located in the /opt/marzban directory:
+یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 ```
 
-3. Restart Marzban:
+3. ری استارت مرزبان
 ```sh
 marzban restart
 ```
 
-## Updating
-To update the templates, simply repeat step 1.
+## بروزرسانی
+برای بروزرسانی تمپلیت فقط کافیست مرحله 1 را تکرار کنید.
 
 # Contributors
 
@@ -68,7 +68,7 @@ Thanks to the all contributors who have helped improve Sing-box template:
   Made with <a rel="noopener noreferrer" target="_blank" href="https://contrib.rocks">contrib.rocks</a>
 </p>
 
-# Support
+# حمایت از من
 
 <a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">

@@ -6,7 +6,8 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>Sing-box Templates for the <a href="https://github.com/Gozargah/Marzban">Marzban</a> Panel</h1>
+<h1 align="center"/>تمپلیت‌های sing-box برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
+
 
 <p align="center">
  <a href="./README.md">
@@ -18,45 +19,47 @@
  </a>
 </p>
 
-# Introduction
-A list of customized templates for Marzban.
 
-# Template List
-- [Template for Sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
-- [Subscription Page](https://github.com/WhyMan1/marzban-template/tree/master/subscription)
-- [Home Page](https://github.com/WhyMan1/marzban-template/tree/master/home)
+# مقدمه
+لیستی از تمپلیت‌های شخصی سازی شده برای مرزبان
 
-# Installation Steps
-To install each template, visit its respective page.
+# لیست تمپلیت ها
+- [تمپلیت برای sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
+- [صفحه سابسکریپشن](https://github.com/WhyMan1/marzban-template/tree/master/subscription)
+- [صفحه خانه](https://github.com/WhyMan1/marzban-template/tree/master/home)
 
-# Install All
-To install all available templates, run the following commands in your server terminal:
-1. Download template files:
+
+# مراحل نصب
+برای نصب هر تمپلیت به صفحه مربوط به آن مراجعه کنید
+
+# نصب همه
+برای نصب همه تمپلیت های موجود دستورات زیر را در ترمینال سرور خود اجرا کنید:
+1. دانلود فایل های تمپلیت
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
 sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
 sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/home/index.html
 ```
-2. Run the following commands in your server terminal:
+2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
 echo 'SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"' | sudo tee -a /opt/marzban/.env
 ```
-Alternatively, add the following values to the .env file located in the /opt/marzban directory:
+یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"
 ```
 
-3. Restart Marzban:
+3. ری استارت مرزبان
 ```sh
 marzban restart
 ```
 
-## Updating
-To update the templates, simply repeat step 1.
+## بروزرسانی
+برای بروزرسانی تمپلیت ها فقط کافیست مرحله 1 را تکرار کنید.
 
 # Contributors
 
@@ -72,7 +75,7 @@ Thanks to the all contributors who have helped improve Sing-box template:
   Made with <a rel="noopener noreferrer" target="_blank" href="https://contrib.rocks">contrib.rocks</a>
 </p>
 
-# Support
+# حمایت از من
 
 <a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">

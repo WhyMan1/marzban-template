@@ -6,7 +6,17 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>sing-box config example with IPv6 for <a href="https://github.com/Gozargah/Marzban">Marzban</a></h1>
+<h1 align="center"/>sing-box config example for <a href="https://github.com/Gozargah/Marzban">Marzban</a></h1>
+
+<p align="center">
+ <a href="./README.md">
+ English
+ </a>
+ /
+ <a href="./README-fa.md">
+ فارسی
+ </a>
+</p>
 
 ## فهرست مطالب
 - [مقدمه](#مقدمه)
@@ -15,7 +25,6 @@
 - [لینک دانلود sing-box](#لینک-دانلود-sing-box)
 
 # مقدمه
-اگه همه سروراتون IPv6 داره و می‌خواید فعال بشه براتون این کانفیگ به کارتون میاد
 سینگ باکس یک پروکسی مبتنی بر قوانین است که به شما این امکان را می‌دهد که تنظیمات مربوط به برنامه از قبیل DNS و مسیریابی و ... را از سمت سرور انجام دهید. در این template از سمت سرور، سینگ باکس  را به گونه‌ای تنظیم شده است که اتصال به سایت‌های ایرانی به صورت مستقیم انجام شود.
 از مهم ترین ویژگی کلاینت sing-box پشتیبانی از پلتفرم های مختلف مانند اندروید، iOS، macOS و ... می باشد.
 
@@ -28,7 +37,7 @@
 # مراحل نصب
 1. دانلود فایل template
 ```sh
-sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singboxWithIPv6/default.json
+sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
 ```
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh

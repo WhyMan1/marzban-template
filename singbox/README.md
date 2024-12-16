@@ -6,53 +6,62 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>sing-box config example for <a href="https://github.com/Gozargah/Marzban">Marzban</a></h1>
+<h1 align="center"/>Sing-box Config Example for <a href="https://github.com/Gozargah/Marzban">Marzban</a></h1>
 
-## فهرست مطالب
-- [مقدمه](#مقدمه)
-- [ویژگی‌ ها](#ویژگی-ها)
-- [مراحل نصب](#مراحل-نصب)
-- [لینک دانلود sing-box](#لینک-دانلود-sing-box)
+<p align="center">
+ <a href="./README.md">
+ English
+ </a>
+ /
+ <a href="./README-fa.md">
+ فارسی
+ </a>
+</p>
 
-# مقدمه
-سینگ باکس یک پروکسی مبتنی بر قوانین است که به شما این امکان را می‌دهد که تنظیمات مربوط به برنامه از قبیل DNS و مسیریابی و ... را از سمت سرور انجام دهید. در این template از سمت سرور، سینگ باکس  را به گونه‌ای تنظیم شده است که اتصال به سایت‌های ایرانی به صورت مستقیم انجام شود.
-از مهم ترین ویژگی کلاینت sing-box پشتیبانی از پلتفرم های مختلف مانند اندروید، iOS، macOS و ... می باشد.
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation Steps](#installation-steps)
+- [Sing-box Download Link](#sing-box-download-link)
 
-# ویژگی ها
-- وصل شدن به سریع ترین کانفیگ
-- وصل شدن مستقیم به وب‌سایت‌های ایرانی هنگامی که فیلترشکن روشن است
-- بلاک کردن تبلیغات
-و ...
+# Introduction
+Sing-box is a rule-based proxy that allows you to configure program settings such as DNS, routing, and more from the server side. In this template, Sing-box is configured server-side to establish direct connections to local (internal) websites.  
+One of the most notable features of the Sing-box client is its support for multiple platforms, including Android, iOS, macOS, and more.
 
-# مراحل نصب
-1. دانلود فایل template
+# Features
+- Connects to the fastest configuration.
+- Directly accesses Iranian websites when the VPN is active.
+- Blocks advertisements.  
+And more.
+
+# Installation Steps
+1. Download the template file.
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
 ```
-2. دستورات زیر رو تو ترمینال سرورتون بزنید:
+2. Run the following commands in your server terminal:
 ```sh
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"' | sudo tee -a /opt/marzban/.env
 ```
-یا از این طریق فایل را ادیت کرده و اضافه کنید
+Alternatively, add the following values to the .env file located in the /opt/marzban directory:
 ```sh
 sudo nano /opt/marzban/.env
 ```
-و مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"
 ```
 
-3. ری استارت مرزبان
+3. Restart Marzban:
 ```sh
 marzban restart
 ```
 
-## بروزرسانی
-برای بروزرسانی تمپلیت فقط کافیست مرحله ۱ را تکرار کنید.
+## Updating
+To update the templates, simply repeat step 1.
 
-# لینک دانلود sing-box
+# Sing-box Download Link
 - Android:
    - [SFA AppCenter](https://install.appcenter.ms/users/nekohasekai/apps/sfa/distribution_groups/publictest)
    - [SFA Github](https://github.com/SagerNet/sing-box/releases)
@@ -62,7 +71,21 @@ marzban restart
 - macOS：
   - [SFM](https://apps.apple.com/us/app/sing-box/id6451272673)
 
-# حمایت از من
+# Contributors
+
+<p align="center">
+Thanks to the all contributors who have helped improve Sing-box template:
+</p>
+<p align="center">
+<a href="https://github.com/WhyMan1/marzban-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=WhyMan1/marzban-template" />
+</a>
+</p>
+<p align="center">
+  Made with <a rel="noopener noreferrer" target="_blank" href="https://contrib.rocks">contrib.rocks</a>
+</p>
+
+# Support
 
 <a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
   <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
