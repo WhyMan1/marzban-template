@@ -19,6 +19,10 @@
       {
         "outbound": "any",
         "server": "dns-local"
+      },
+      {
+        "rule_set": "geosite-category-ir",
+        "server": "dns-local"
       }
     ],
     "final": "dns-remote",
@@ -28,7 +32,7 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "singbox-tun",
+      "interface_name": "sing-tun",
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"

@@ -62,16 +62,6 @@ marzban restart
 ## بروزرسانی
 برای بروزرسانی تمپلیت فقط کافیست مرحله ۱ را تکرار کنید.
 
-# لینک دانلود sing-box
-- Android:
-   - [SFA AppCenter](https://install.appcenter.ms/users/nekohasekai/apps/sfa/distribution_groups/publictest)
-   - [SFA Github](https://github.com/SagerNet/sing-box/releases)
-   - [SFA Google Play](https://play.google.com/store/apps/details?id=io.nekohasekai.sfa)
-- iOS:
-  - [SFI](https://apps.apple.com/us/app/sing-box/id6451272673)
-- macOS：
-  - [SFM](https://apps.apple.com/us/app/sing-box/id6451272673)
-
 # حمایت از من
 
 <a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
