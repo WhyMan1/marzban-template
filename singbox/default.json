@@ -1,6 +1,7 @@
 {
   "log": {
-    "level": "warn"
+    "level": "warn",
+    "timestamp": false
   },
   "dns": {
     "servers": [
@@ -44,8 +45,7 @@
         "172.16.0.0/12",
         "fe80::/10",
         "fc00::/7"
-      ],
-      "sniff": true
+      ]
     }
   ],
   "outbounds": [
@@ -63,21 +63,21 @@
     {
       "type": "direct",
       "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    },
-    {
-      "type": "dns",
-      "tag": "dns-out"
     }
   ],
   "route": {
     "rules": [
       {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
         "protocol": "dns",
-        "outbound": "dns-out"
+        "action": "hijack-dns"
+      },
+      {
+        "rule_set": "geosite-category-ads",
+        "action": "reject"
       },
       {
         "rule_set": "geosite-category-ads",
@@ -101,25 +101,19 @@
         "type": "remote",
         "tag": "geosite-category-ads",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs"
       },
       {
         "type": "remote",
         "tag": "geoip-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs"
       }
     ],
     "final": "proxy",
