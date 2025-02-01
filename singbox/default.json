@@ -80,19 +80,14 @@
         "action": "reject"
       },
       {
-        "rule_set": "geosite-category-ads",
-        "outbound": "block"
-      },
-      {
         "ip_is_private": true,
         "outbound": "direct"
       },
       {
-        "rule_set": "geosite-category-ir",
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "geoip-ir",
+        "rule_set": [
+          "geosite-category-ir",
+          "geoip-ir"
+        ],
         "outbound": "direct"
       }
     ],
