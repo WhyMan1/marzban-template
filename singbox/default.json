@@ -58,7 +58,8 @@
     {
       "type": "urltest",
       "tag": "⚡️ Auto",
-      "outbounds": null
+      "outbounds": null,
+      "url": "https://1.1.1.2/dns-query?name=security.cloudflare-dns.com"
     },
     {
       "type": "direct",
