@@ -81,10 +81,6 @@
         "action": "reject"
       },
       {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
         "rule_set": [
           "geosite-category-ir",
           "geoip-ir"
