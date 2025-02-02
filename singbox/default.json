@@ -44,10 +44,7 @@
         "172.16.0.0/12",
         "fe80::/10",
         "fc00::/7"
-      ],
-      "route_exclude_address_set": [
-        "geoip-ir"
-     ]
+      ]
     }
   ],
   "outbounds": [
@@ -81,6 +78,13 @@
       {
         "rule_set": "geosite-category-ads",
         "action": "reject"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ir",
+          "geoip-ir"
+        ],
+        "outbound": "direct"
       }
     ],
     "rule_set": [
