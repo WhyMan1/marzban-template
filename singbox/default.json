@@ -32,7 +32,6 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "sing-tun",
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
@@ -45,7 +44,10 @@
         "172.16.0.0/12",
         "fe80::/10",
         "fc00::/7"
-      ]
+      ],
+      "route_exclude_address_set": [
+        "geoip-ir"
+     ]
     }
   ],
   "outbounds": [
@@ -79,13 +81,6 @@
       {
         "rule_set": "geosite-category-ads",
         "action": "reject"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ir",
-          "geoip-ir"
-        ],
-        "outbound": "direct"
       }
     ],
     "rule_set": [
