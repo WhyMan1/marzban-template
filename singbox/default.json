@@ -6,12 +6,11 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "h3://8.8.8.8/dns-query",
-        "detour": "proxy"
+        "address": "h3://8.8.8.8/dns-query"
       },
       {
         "tag": "dns-local",
-        "address": "8.8.8.8",
+        "address": "local",
         "detour": "direct"
       }
     ],
@@ -36,7 +35,6 @@
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "strict_route": true,
       "route_exclude_address": [
         "192.168.0.0/16",
         "10.0.0.0/8",
