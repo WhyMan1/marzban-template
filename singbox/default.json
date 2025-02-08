@@ -6,7 +6,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "https://1.1.1.2/dns-query",
+        "address": "h3://8.8.8.8/dns-query",
         "detour": "proxy"
       },
       {
@@ -58,7 +58,7 @@
       "type": "urltest",
       "tag": "⚡️ Auto",
       "outbounds": null,
-      "url": "https://1.1.1.2/dns-query?name=security.cloudflare-dns.com"
+      "url": "https://8.8.8.8/dns-query?name=google.com"
     },
     {
       "type": "direct",
