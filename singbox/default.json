@@ -23,8 +23,7 @@
         "rule_set": "geosite-category-ir",
         "server": "dns-local"
       }
-    ],
-    "final": "dns-remote"
+    ]
   },
   "inbounds": [
     {
@@ -112,7 +111,6 @@
         "update_interval": "168h0m0s"
       }
     ],
-    "final": "proxy",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
