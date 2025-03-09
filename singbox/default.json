@@ -23,7 +23,9 @@
         "rule_set": "geosite-category-ir",
         "server": "dns-local"
       }
-    ]
+    ],
+    "strategy": "prefer_ipv4",
+    "cache_capacity": 4096
   },
   "inbounds": [
     {
@@ -34,6 +36,7 @@
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
+      "strict_route": true,
       "route_exclude_address": [
         "192.168.0.0/16",
         "10.0.0.0/8",
@@ -66,7 +69,13 @@
     "rules": [
       {
         "inbound": "tun-in",
-        "action": "sniff"
+        "action": "resolve",
+        "strategy": "prefer_ipv4"
+      },
+      {
+        "inbound": "tun-in",
+        "action": "sniff",
+        "timeout": "1s"
       },
       {
         "protocol": "dns",
@@ -91,28 +100,24 @@
         "tag": "geosite-category-ads",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ir",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geoip-ir",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "168h0m0s"
+        "download_detour": "direct"
       }
     ],
-    "auto_detect_interface": true,
-    "override_android_vpn": true
+    "auto_detect_interface": true
   },
   "experimental": {
     "cache_file": {
