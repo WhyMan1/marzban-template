@@ -18,14 +18,9 @@
       {
         "outbound": "any",
         "server": "dns-local"
-      },
-      {
-        "rule_set": "geosite-category-ir",
-        "server": "dns-local"
       }
     ],
-    "strategy": "prefer_ipv4",
-    "cache_capacity": 4096
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
@@ -67,20 +62,6 @@
   ],
   "route": {
     "rules": [
-      {
-        "inbound": "tun-in",
-        "action": "resolve",
-        "strategy": "prefer_ipv4"
-      },
-      {
-        "inbound": "tun-in",
-        "action": "sniff",
-        "timeout": "1s"
-      },
-      {
-        "protocol": "dns",
-        "action": "hijack-dns"
-      },
       {
         "rule_set": "geosite-category-ads",
         "action": "reject",
