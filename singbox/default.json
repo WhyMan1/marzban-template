@@ -18,6 +18,10 @@
       {
         "outbound": "any",
         "server": "dns-local"
+      },
+      {
+        "rule_set": "geosite-category-ir",
+        "server": "dns-local"
       }
     ],
     "strategy": "prefer_ipv4"
