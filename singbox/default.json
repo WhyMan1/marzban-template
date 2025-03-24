@@ -24,25 +24,20 @@
         "server": "dns-local"
       }
     ],
-    "strategy": "prefer_ipv4"
+    "strategy": "ipv4_only"
   },
   "inbounds": [
     {
       "type": "tun",
       "tag": "tun-in",
-      "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
+      "address": "172.19.0.1/30",
       "auto_route": true,
       "strict_route": true,
       "route_exclude_address": [
         "192.168.0.0/16",
         "10.0.0.0/8",
         "169.254.0.0/16",
-        "172.16.0.0/12",
-        "fe80::/10",
-        "fc00::/7"
+        "172.16.0.0/12"
       ]
     }
   ],
