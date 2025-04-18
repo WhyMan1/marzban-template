@@ -67,6 +67,14 @@
         "strategy": "ipv4_only"
       },
       {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
         "rule_set": "geosite-category-ads",
         "action": "reject",
         "method": "default"
