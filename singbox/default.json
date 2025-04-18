@@ -63,8 +63,7 @@
     "rules": [
       {
         "inbound": "tun-in",
-        "action": "sniff",
-        "timeout": "1s"
+        "action": "sniff"
       },
       {
         "protocol": "dns",
