@@ -63,11 +63,6 @@
     "rules": [
       {
         "inbound": "tun-in",
-        "action": "resolve",
-        "strategy": "ipv4_only"
-      },
-      {
-        "inbound": "tun-in",
         "action": "sniff"
       },
       {
