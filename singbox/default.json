@@ -6,7 +6,8 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "1.1.1.1"
+        "address": "1.1.1.1",
+        "detour": "proxy"
       },
       {
         "tag": "dns-local",
