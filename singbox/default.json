@@ -19,10 +19,6 @@
       {
         "outbound": "any",
         "server": "dns-local"
-      },
-      {
-        "rule_set": "geosite-category-ir",
-        "server": "dns-local"
       }
     ],
     "strategy": "prefer_ipv4",
@@ -73,29 +69,6 @@
       {
         "protocol": "dns",
         "action": "hijack-dns"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ir",
-          "geoip-ir"
-        ],
-        "outbound": "direct"
-      }
-    ],
-    "rule_set": [
-      {
-        "type": "remote",
-        "tag": "geosite-category-ir",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-ir",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs",
-        "download_detour": "direct"
       }
     ],
     "auto_detect_interface": true
