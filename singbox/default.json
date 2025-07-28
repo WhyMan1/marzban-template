@@ -6,7 +6,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "1.1.1.1",
+        "address": "127.0.0.53",
         "detour": "proxy"
       },
       {
@@ -25,7 +25,6 @@
         "server": "dns-local"
       }
     ],
-    "strategy": "prefer_ipv4",
     "disable_expire": true
   },
   "inbounds": [
