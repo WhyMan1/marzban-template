@@ -6,7 +6,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "127.0.0.53",
+        "address": "1.1.1.1",
         "detour": "proxy"
       },
       {
