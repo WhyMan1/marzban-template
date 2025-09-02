@@ -25,6 +25,7 @@
 
 # لیست تمپلیت ها
 - [تمپلیت برای sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
+- [تمپلیت برای v2ray](https://github.com/WhyMan1/marzban-template/tree/master/v2ray)
 - [صفحه سابسکریپشن](https://github.com/WhyMan1/marzban-template/tree/master/subscription)
 - [صفحه خانه](https://github.com/WhyMan1/marzban-template/tree/master/home)
 
