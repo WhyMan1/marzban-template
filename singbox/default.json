@@ -21,7 +21,7 @@
         "server": "dns-local"
       },
       {
-        "rule_set": "geosite-category-ir",
+        "rule_set": "geosite-ir",
         "server": "dns-local"
       }
     ],
@@ -75,7 +75,7 @@
       },
       {
         "rule_set": [
-          "geosite-category-ir",
+          "geosite-ir",
           "geoip-ir"
         ],
         "outbound": "direct"
@@ -84,9 +84,9 @@
     "rule_set": [
       {
         "type": "remote",
-        "tag": "geosite-category-ir",
+        "tag": "geosite-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ir.srs",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs",
         "download_detour": "direct",
         "update_interval": "168h0m0s"
       },
@@ -94,7 +94,7 @@
         "type": "remote",
         "tag": "geoip-ir",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ir.srs",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs",
         "download_detour": "direct",
         "update_interval": "168h0m0s"
       }
