@@ -26,20 +26,6 @@
   },
   "inbounds": [
     {
-      "tag": "dns-in",
-      "listen": "127.0.0.1",
-      "port": 10853,
-      "protocol": "tunnel",
-      "settings": {
-        "address": "one.one.one.one",
-        "port": 53,
-        "network": "tcp,udp"
-      },
-      "sniffing": {
-        "enabled": false
-      }
-    },
-    {
       "tag": "socks-in",
       "listen": "127.0.0.1",
       "port": 10808,
@@ -56,10 +42,21 @@
     {
       "protocol": "freedom",
       "tag": "direct"
+    },
+    {
+      "tag": "dns-out",
+      "protocol": "dns"
     }
   ],
   "routing": {
     "rules": [
+      {
+        "port": 53,
+        "inboundTag": [
+          "socks-in"
+        ],
+        "outboundTag": "dns-out"
+      },
       {
         "ip": [
           "geoip:ir",
